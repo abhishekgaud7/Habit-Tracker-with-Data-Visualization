@@ -12,7 +12,7 @@ const HabitList = ({ habits, onHabitUpdated, onHabitDeleted }) => {
         }
 
         try {
-            await axios.patch(`http://localhost:5000/api/habits/${habit.id}`, {
+            await axios.patch(`/api/habits/${habit.id}`, {
                 completed_dates: [...completedDates, today],
             });
             onHabitUpdated();
@@ -24,7 +24,7 @@ const HabitList = ({ habits, onHabitUpdated, onHabitDeleted }) => {
     const handleDelete = async (id) => {
         if (!window.confirm('Are you sure you want to delete this habit?')) return;
         try {
-            await axios.delete(`http://localhost:5000/api/habits/${id}`);
+            await axios.delete(`/api/habits/${id}`);
             onHabitDeleted();
         } catch (error) {
             console.error('Error deleting habit:', error);

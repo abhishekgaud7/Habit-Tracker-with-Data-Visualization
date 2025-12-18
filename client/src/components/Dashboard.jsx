@@ -9,7 +9,7 @@ const Dashboard = () => {
 
     const fetchHabits = async () => {
         try {
-            const response = await axios.get('http://localhost:5000/api/habits');
+            const response = await axios.get('/api/habits');
             setHabits(response.data);
         } catch (error) {
             console.error('Error fetching habits:', error);

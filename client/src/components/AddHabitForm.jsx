@@ -9,7 +9,7 @@ const AddHabitForm = ({ onHabitAdded }) => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            await axios.post('http://localhost:5000/api/habits', {
+            await axios.post('/api/habits', {
                 name,
                 description,
                 target_frequency: targetFrequency,
