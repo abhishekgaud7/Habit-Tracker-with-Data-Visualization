@@ -25,3 +25,8 @@ if (require.main === module) {
 }
 
 module.exports = app;
+
+// server/server.js ke end mein ye line zaroor honi chahiye
+export default app;
+// ya agar CommonJS use kar rahe hain:
+// module.exports = app;
