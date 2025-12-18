@@ -1,0 +1,26 @@
+{
+  "name": "habit-tracker-with-data-visualization",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"npm run dev --prefix client\" \"npm run dev --prefix server\"",
+    "install-all": "npm install && npm install --prefix client && npm install --prefix server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abhishekgaud7/Habit-Tracker-with-Data-Visualization.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/abhishekgaud7/Habit-Tracker-with-Data-Visualization/issues"
+  },
+  "homepage": "https://github.com/abhishekgaud7/Habit-Tracker-with-Data-Visualization#readme",
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}
